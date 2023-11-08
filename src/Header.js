@@ -2,10 +2,11 @@ function Header() {
   const isUserLogged = true;
   const itemsInCart = 2;
   const User = {
-    firstname: "ella",
-    lastname: "ahmad",
+    firstname: "Ella",
+    lastname: "AHMAD",
     job : "wd",
   };
+  
     return (
       <header>
         <h1>my commerce</h1>

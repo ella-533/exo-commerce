@@ -1,21 +1,17 @@
 function Products() {
+    const productsFromOb = [
+        "Mocassins à glands", "Charentaises", "Talons aiguille"
+    ];
     return (
-        <div>
-            <article>
-                <h2>Special bags</h2>
-                <p>200$</p>
-            </article>
-
-            <article>
-                <h2>Digital watches</h2>
-                <p>300$</p>
-            </article>
-
-            <article>
-                <h2>Our products</h2>
-                <p>400$</p>
-            </article>
-        </div>
+        <main>
+            {productsFromOb.map((element)=>{
+                return (
+                    <article>
+                        <h2>{element}</h2>
+                    </article>
+                );
+            })}
+        </main>
     );
 }
   
