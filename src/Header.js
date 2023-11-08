@@ -1,4 +1,5 @@
 function Header() {
+  const isUserLogged = false;
     return (
       <header>
         <h1>my commerce</h1>
@@ -7,6 +8,8 @@ function Header() {
             <li>Home</li>
             <li>Products</li>
             <li>New</li>
+            {isUserLogged ? <li>Ella</li> :
+            <li>connexion</li>}
           </ul>
         </nav>
       </header>
