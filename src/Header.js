@@ -1,7 +1,11 @@
 function Header() {
   const isUserLogged = true;
-  const isUserLogged = fals;
   const itemsInCart = 2;
+  const User = {
+    firstname: "ella",
+    lastname: "ahmad",
+    job : "wd",
+  };
     return (
       <header>
         <h1>my commerce</h1>
@@ -17,6 +21,7 @@ function Header() {
             <li> cart:{itemsInCart} </li>:<li>ther is no items</li>
 
             }
+            <li>{User.firstname} {User.lastname} , {User.job}</li>
           </ul>
         </nav>
       </header>
